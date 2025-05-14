@@ -28,10 +28,10 @@ Select ONE Additional Feature to Add
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1"> 10 things I hate about you</option>
+          <option value="movie2"> The notebook</option>
+          <option value="movie3"> Unknown Man</option>
+          <option value="movie4"> The Godfather</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -43,10 +43,10 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">A Tree Grows In Brooklyn</option>
+          <option value="book2">The Housemaid</option>
+          <option value="book3">The Housemaid's Secret</option>
+          <option value="book4">Harry Potter  </option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -54,33 +54,45 @@ Select ONE Additional Feature to Add
     <div id="book-result"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      //Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
-        event.preventDefault();
+      
 
-        var $answer = $("#movie-answer");
-        var answer = $answer.val();
+//         $("#snake-pic").slidedown(1000, function (){
+//           ("#snake-h1").slidedown(3000);
+//           })
+//         $("img").animate(
+//       { width: "310px",
+//         margitLeft:"30px",
+//         borderwidth:"20px",
+//       },2500 );
+      
+      
+        //Movie Question jQuery Code
+        $("#movie-form").on("submit", function (event) {
+          event.preventDefault();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
-        } else {
-          $("#movie-result").text("Try Again!");
-        }
-      });
+          var $answer = $("#movie-answer");
+          var answer = $answer.val();
 
-      //Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
-        event.preventDefault();
+          if (answer === "movie1") {
+            $("#movie-result").text("Yay you did it!");
+          } else {
+            $("#movie-result").text("Try Again!");
+          }
+        });
 
-        var $answer = $("#book-answer");
-        var answer = $answer.val();
+        //Book Question jQuery Code
+        $("#book-form").on("submit", function (event) {
+          event.preventDefault();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
-        } else {
-          $("#book-result").text("Try Again!");
-        }
-      });
+          var $answer = $("#book-answer");
+          var answer = $answer.val();
+
+          if (answer === "book2") {
+            $("#book-result").text("YESSSS!");
+          } else {
+            $("#book-result").text("Try Again!");
+          }
+        });
     </script>
   </body>
 
