@@ -6,17 +6,17 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.declaration {
+button {
   font: italic 20px fantasy;
 }
-.quote {
+label {
   font-style: italic;
   font-size: 16px;
   font-family: cursive;
 }
 
 body {
-  font-family: cursive;
+  font-family: "Exile", system-ui;
 }
 .photo-gallery {
   background: rgb(255, 245, 217);
